@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Record - Community Kitchen</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🍲 Add Daily Distribution Record</h1>
+        <p>Enter today's meal distribution and stock details.</p>
+    </header>
+
+    <div class="card">
+
+        <form method="POST">
+
+            <label>Date</label>
+            <input type="date" name="date" required>
+
+
+            <label>Meals Served</label>
+            <input
+                type="number"
+                name="meals_served"
+                min="1"
+                required
+            >
+
+
+            <label>Rice (kg)</label>
+            <input
+                type="number"
+                step="0.1"
+                name="rice_kg"
+                min="0"
+                required
+            >
+
+
+            <label>Dal (kg)</label>
+            <input
+                type="number"
+                step="0.1"
+                name="dal_kg"
+                min="0"
+                required
+            >
+
+
+            <label>Vegetables (kg)</label>
+            <input
+                type="number"
+                step="0.1"
+                name="vegetables_kg"
+                min="0"
+                required
+            >
+
+
+            <label>Stock (kg)</label>
+            <input
+                type="number"
+                step="0.1"
+                name="stock_balance"
+                min="0"
+                required
+            >
+
+
+            <label>Cost per Meal ($)</label>
+            <input
+                type="number"
+                step="0.01"
+                name="cost_per_meal"
+                min="0"
+                required
+            >
+
+
+            <button type="submit">
+                Add Record
+            </button>
+
+            <a href="{{ url_for('index') }}" class="back-button">
+                ← Back to Dashboard
+            </a>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
