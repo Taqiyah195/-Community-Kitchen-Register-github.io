@@ -16,3 +16,7 @@ Easy navigation
 Informative content
 Interactive web elements
 Responsive layout
+
+## 🎥 Project Demo Video
+
+[▶️ Watch the Project Demo Video](https://drive.google.com/file/d/1Jowp-8NdFM8tkTtLJ_gSc5w08dpDc5VK/view?usp=sharing)
